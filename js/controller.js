@@ -14,6 +14,7 @@ function loadDs() {
         <td></td>
         <td>
             <button class="btn btn-primary" onclick="xoaUser('${data.taiKhoan}')">Xóa</button>
+            <button class="btn btn-primary" onclick="capNhatUser('${data.taiKhoan}')">Cập nhật</button>
         </td>
         </tr>`
     }
@@ -65,4 +66,8 @@ function getInput() {
         }
     }
     return user;
+}
+
+function openModal() {
+    $('#myModal').modal('show');
 }
